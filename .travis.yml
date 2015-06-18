@@ -1,7 +1,7 @@
 language: ruby
 rvm:
 - 2.1
-install: gem install jekyll jekyll-sitemap html-proofer
+install: gem install jekyll jekyll-sitemap html-proofer listen
 script: bash ./deploy.sh
 notifications:
   email:
