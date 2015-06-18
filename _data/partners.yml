@@ -1,0 +1,80 @@
+- name: Google
+  link: https://cloud.google.com/developers/startups/
+  info: "Hosting credit grant and free Business Level support."
+  img: google.jpg
+- name: IActive
+  link: http://www.iactiveit.com/
+  info: "Special no-cost licensing for AI technology, 10% discount on software outsourcing services, first five hours free (including initial consultation), and 20% discount on innovation consulting services thereafter."
+  img: iactive.png
+- name: DotSub
+  link: http://dotsub.com/
+  info: "Free Dotsub Enterprise Edition and support."
+  img: dotsub.png
+- name: Amazon Web Services
+  link: http://aws.amazon.com/
+  info: "Hosting credit grant and free Business Level support."
+  img: amazonaws.png
+- name: The Brenner Group
+  link: http://www.thebrennergroup.com/
+  info: "Discounted startup accounting setup package."
+  img: thebrennergroup.png
+- name: DocSend
+  link: http://docsend.com/
+  info: "DocSend has partnered with Singularity Univeristy to give you 6 months of full DocSend usage for free."
+  img: docsend.png
+- name: Engine Yard
+  link: https://www.engineyard.com/
+  info: "2,500 free hours."
+  img: engineyard.png
+- name: Hunter Technology
+  link: http://www.hunterpcb.com/
+  info: "Rebates on electronic design and manufacturing services."
+  img: huntertech.png
+- name: Idean
+  link: http://idean.com/
+  info: "UX Ninja Startup Package."
+  img: idean.png
+- name: Microsoft BizSpark
+  link: http://www.microsoft.com/bizspark/
+  info: "Extensive software development tools and discounted offers."
+  img: bizspark.png
+- name: Mixpanel
+  link: https://mixpanel.com/
+  info: "Free Start-Up Plan."
+  img:
+- name: New Relic
+  link: http://newrelic.com/
+  info: "Six free months of Pro Level subscription."
+  img: newrelic.png
+- name: Rackspace
+  link: http://www.rackspace.com/
+  info: "Up to $2000/month refund credit for twelve months."
+  img: rackspace.png
+- name: Silicon Valley Bank
+  link: http://www.svb.com/
+  info: "Free Start-Up Banking Package."
+  img: siliconvalleybank.png
+- name: TechShop
+  link: http://www.techshop.ws/
+  info: "15% off membership fees."
+  img: techshop.png
+- name: TriNet
+  link: http://www.trinet.com/
+  info: "15% off service fees, $500 off setup fee, no minimum number of employees to enroll."
+  img: trinet.png
+- name: Upwork
+  link: https://www.upwork.com/
+  info: "Free recruiting services, Upwork credit grants, and training."
+  img: upwork.png
+- name: Whitecoat Strategies
+  link: http://whitecoatstrategies.com/
+  info: "Discounted PR and Strategic Communications for SU Companies."
+  img: whitecoat.png
+- name: Wix
+  link: http://www.wix.com/
+  info: "Free Unlimited Premium Plan for 1 year."
+  img: wix.png
+- name: Xero
+  link: http://www.xero.com/us/
+  info: "180 days of Large plan free."
+  img: xero.png

@@ -1,0 +1,44 @@
+---
+layout: compress
+---
+{% capture var %}Mentor: {{ page.first-name }} {{ page.last-name }}{% endcapture %}
+{% include header.html title=var %}
+
+<div id="header-team-bg">
+	<div id="header">
+		{% include menu.html %}
+		<div class="row">
+			<div class="header-promo large-10 columns large-offset-1 end">
+				<h1>{{ page.first-name }} {{ page.last-name }}</h1>
+				<h3>{{ page.job }}</h3>
+			</div>
+		</div>
+	</div> <!-- header -->
+</div> <!-- header-home-bg -->
+
+<div id="main-content">
+	<div class="row">
+		<div class="large-6 columns large-offset-1">
+			<h4>{{ page.first-name }} {{ page.last-name }}</h4>
+			<h4>{{ page.job }}</h4>
+			<hr />
+			<ul>{% for accomplishment in page.accomplishments %}<li><h5>{{ accomplishment }}</h5></li>{% endfor %}</ul>
+			<hr />
+			<h6>Expertise:</h6> {% for categorie in page.categories %}<span class="radius secondary label">{{ categorie }}</span>&nbsp;{% endfor %}
+		</div>
+		<div class="large-4 columns end" style="border-left: 1px solid #ddd;">
+			<img src="/img/mentor/{{ page.picture }}" alt="{{ page.first-name }} {{ page.last-name }}" class="round-image" />
+			{% if page.linkedin %}
+			<div class="team-social text-center">
+				<a href="{{ page.linkedin }}" target="_blank"><img src="/img/icon-linkedin.svg" alt="LinkedIn" /></a>
+			</div>
+			{% endif %}
+		</div>
+		<div class="large-10 columns large-offset-1 end">
+			<hr />
+			{{ content }}
+		</div>
+	</div>
+</div> <!-- main-content -->
+
+{% include footer.html %}

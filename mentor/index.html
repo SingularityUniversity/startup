@@ -1,0 +1,73 @@
+---
+layout: default
+title: "Mentor & Advisor Network"
+---
+<div id="header-team-bg">
+	<div id="header">
+		{% include menu.html %}
+		<div class="row">
+			<div class="header-promo large-10 columns large-offset-1 end">
+				<h1>Mentor & Advisor Network</h1>
+				<h3>A global community of experts – here to help.</h3>
+			</div>
+		</div>
+	</div> <!-- header -->
+</div> <!-- header-home-bg -->
+
+<div id="main-content">
+	<div class="row">
+		<div class="large-10 columns large-offset-1 end">
+			<h2>Mentor & Advisor Network</h2>
+			<p>The Mentor & Advisor Network is a group of amazing folks who kindly offer their time and expertise to help you and your company on your own journey. Consider this your rolodex of awesomeness.</p>
+			<p>Feel free to reach out to them. And please don’t forget: These wonderful folks are doing this out of gratitude – please treat them like the messiah.</p>
+			<p>If you're interested in becoming a mentor please <a href="mailto:startup@singularityu.org">contact us</a>.</p>
+			<form>
+				<fieldset>
+					<legend>Mentor Search</legend>
+					<div class="row">
+						<div class="small-4 columns">
+							<label class="inline">What do you need help with?</label>
+						</div>
+						<div class="small-8 columns">
+							<input type="text" id="search-input" placeholder="search...">
+						</div>
+					</div>
+					<ul id="results-container"></ul>
+				</fieldset>
+			</form>
+			<hr />
+			<h2>The Mentors</h2>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="large-10 columns large-offset-1 end" >
+			<ul class="large-block-grid-4 medium-block-grid-3 small-block-grid-1">
+				{% for mentor in site.mentors %}
+				<li>
+					<p><a href="{{ mentor.url }}"><img src="/img/mentor/{{ mentor.picture }}" alt="{{ mentor.first-name }} {{ mentor.last-name }}" class="round-image" /></a></p>
+					<h4>{{ mentor.first-name }} {{ mentor.last-name }}</h4>
+					<h6>{{ mentor.job }}</h6>
+					<ul class="disc">{% for accomplishment in mentor.accomplishments %}<li class="mentor-overview">{{ accomplishment }}</li>{% endfor %}</ul>
+					<p class="text-right mentor-overview"><a href="{{ mentor.url }}">read more &rarr;</a></p>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+
+</div> <!-- main-content -->
+
+<script src="/js/jekyll-search.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+	SimpleJekyllSearch.init({
+		searchInput: document.getElementById('search-input'),
+		resultsContainer: document.getElementById('results-container'),
+		dataSource: '/search.json',
+		searchResultTemplate: '<li><p><a href="{url}" title="{desc}">{first-name} {last-name}, {job}</a></p></li>',
+		noResultsText: 'No results found',
+		limit: 10,
+		fuzzy: false,
+	})
+</script>

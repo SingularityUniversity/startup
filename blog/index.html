@@ -1,0 +1,59 @@
+---
+layout: default
+title: Blog
+---
+<div id="header-blog-bg">
+	<div id="header">
+		{% include menu.html %}
+		<div class="row">
+			<div class="header-promo large-10 columns large-offset-1 end">
+				<h1>News</h1>
+				<h3>Read what’s new at SU Startup Lab.</h3>
+			</div>
+		</div>
+	</div> <!-- header -->
+</div> <!-- header-home-bg -->
+
+<div id="main-content">
+
+	{% for post in paginator.posts %}
+	<div class="row">
+		<div class="large-8 columns large-offset-1">
+			<h2 class="blog-headline"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+			{{ post.content | split:'<!--break-->' | first }}
+			{% if post.content contains '<!--break-->' %}
+    	<p><a href="{{ post.url }}">more...</a></p>
+   		{% endif %}
+		</div>
+		<div class="large-2 columns end">
+			<hr />
+			<h6>Published:<br />{{ post.date | date: "%a, %b %d, %Y" }}</h6>
+			<hr />
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-10 columns large-offset-1 end"><hr /></div>
+	</div>
+	{% endfor %}
+
+	<div class="row">
+		<div class="large-3 columns large-offset-1">
+			{% if paginator.previous_page %}
+			<p><a href="{{ paginator.previous_page_path }}">&larr; previous</a></p>
+			{% else %}
+			<p>&nbsp;</p>
+			{% endif %}
+		</div>
+		<div class="large-4 columns text-center">
+			<p>page: {{ paginator.page }} of {{ paginator.total_pages }}{% comment %} | <a href="/archive/">archive</a>{% endcomment %}</p>
+		</div>
+		<div class="large-3 columns text-right end">
+			{% if paginator.next_page %}
+			<p><a href="{{ paginator.next_page_path }}">next &rarr;</a></p>
+			{% else %}
+			<p>&nbsp;</p>
+			{% endif %}
+		</div>
+	</div>
+
+</div> <!-- main-content -->

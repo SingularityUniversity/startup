@@ -1,0 +1,38 @@
+---
+layout: compress
+---
+{% capture var %}Portfolio: {{ page.name }}{% endcapture %}
+{% include header.html title=var %}
+
+<div id="header-portfolio-bg">
+	<div id="header">
+		{% include menu.html %}
+		<div class="row">
+			<div class="header-promo large-10 columns large-offset-1 end">
+				<h1>{{ page.name }}</h1>
+				<h3>{{ page.tagline }}</h3>
+			</div>
+		</div>
+	</div> <!-- header -->
+</div> <!-- header-home-bg -->
+
+<div id="main-content">
+	<div class="row">
+		<div class="large-5 columns large-offset-1">
+			<h4>{{ page.name }}</h4>
+			<h5>Global Grand Challenge: <strong>{{ page.grandchallenge }}</strong></h5>
+			<h5>Technology: <strong>{{ page.technology }}</strong></h5>
+			{% if page.link %}<h5>Website: <strong><a href="{{ page.link }}" target="_blank">{{ page.link }}</a></strong>{% endif %}</h5>
+		</div>
+		<div class="large-5 columns end" style="border-left: 1px solid #ddd;">
+			<img src="/img/portfolio/{{ page.image }}" alt="{{ page.name }}" />
+		</div>
+		<div class="large-10 columns large-offset-1 end">
+			<hr />
+			{{ content }}
+		</div>
+	</div>
+</div> <!-- main-content -->
+
+
+{% include footer.html %}

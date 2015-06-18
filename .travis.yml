@@ -1,0 +1,15 @@
+language: ruby
+rvm:
+- 2.1
+install: gem install jekyll jekyll-sitemap html-proofer
+script: bash ./deploy.sh
+notifications:
+  email:
+  - p@singularityu.org
+  on_success: always
+  on_failure: always
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  - GH_REF: github.com/SingularityUniversity/startup-staging.git
+  - secure: AD8MPx6Ix/ZdNkFHZZL9FsS56J0NuGpnMUIJJmoSsdhwWZL/cMJZ9P0ieRrYz931l4A/AiYxqlafzq7lAvTZgMy29qPBG+fq8B9FZ8U2jJxNvLDcQJHu7I73hmeddvco3+1ilfC1BX8FrGRdssBweiIIrzlQnt0yAgtdKrQyixWnyfZ2y/S/Q4AQxIRf8lR61QorvN4lu0PceOxoJnPn9IfuvR7eMopclqLuMP0vETDWyDU4rTrL73zT3gadKiNWFWURqO7WBaBpx5XF8GV6bO5ZF5C+j3jT85oWbjA7K9NUWfF47cg9kjM3weBCjt3r3gx89ThCikRZxrQjKNuOP8pJB3kkj1u/RjHK5gLacSThEGcvusRkK6y4RhuTcdCzEqJ9K3KGUBF1G4KA3fwTjckUHWUdIHan+cICDXoOnlyL7SDC2qw5/MCQopC1xhijWVT8giLe4jb1hn684NqI74lnO7w+gW5tZhWCKB+3KcUcOMqaxkRxCwLPQfD+icH6Cf6WUHDiYkr7Y74G5Rfhtb4/lcPTcwC5ovhIE1bMk6zc6ea497gq3uNLyl01QQDkr9EDfJAjzR7lIl0j05RODZfMWpELqjuiBoaXpDKvmG1Dq054Dlvm5oGy5w5iKX8hCnOuknstsWGxkBcsDjt9kVb07Urhzj4HMyyrc7ZWpHc=

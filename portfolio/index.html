@@ -1,0 +1,36 @@
+---
+layout: default
+title: Portfolio
+---
+<div id="header-portfolio-bg">
+	<div id="header">
+		{% include menu.html %}
+		<div class="row">
+			<div class="header-promo large-10 columns large-offset-1 end">
+				<h1>Our Portfolio</h1>
+				<h3>Get to know the SU Companies.</h3>
+			</div>
+		</div>
+	</div> <!-- header -->
+</div> <!-- header-home-bg -->
+
+<div id="main-content">
+	<div class="row">
+		<div class="large-10 columns large-offset-1 end">
+			<h2>SU Labs Portfolio Companies</h2>
+			<p>Our portfolio companies leverage exponential technologies ranging from artificial intelligence and robotics to physical sciences to address humanity’s grand challenges – from food to energy, water, security, health, environment, education, poverty and space. SU Companies are for-profit and non-profit organizations impacting the world of tomorrow.</p>
+			<hr />
+			<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-4">
+				{% for company in site.companies %}
+				<li class="portfolio-grid">
+					<div class="portfolio-grid-image">
+						<a href="{{ company.url }}"><img src="/img/portfolio/{{ company.image }}" alt="{{ company.name }}" /></a>
+					</div>
+					<h5><a href="{{ company.url }}">{{ company.name }}</a></h5>
+					<hr />
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</div> <!-- main-content -->

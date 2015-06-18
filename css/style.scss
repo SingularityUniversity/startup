@@ -1,0 +1,198 @@
+---
+---
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
+// Import Normalize
+@import "normalize";
+
+// Import Social Share Kit
+@import "social-share-kit";
+
+// Load Google Webfonts
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600);
+
+// Foundation by ZURB
+// foundation.zurb.com
+// Licensed under MIT Open Source
+@import "foundation/settings";
+@import "foundation/components/grid";
+// @import "foundation/components/accordion";
+// @import "foundation/components/alert-boxes";
+@import "foundation/components/block-grid";
+// @import "foundation/components/breadcrumbs";
+// @import "foundation/components/button-groups";
+// @import "foundation/components/buttons";
+// @import "foundation/components/clearing";
+// @import "foundation/components/dropdown";
+// @import "foundation/components/dropdown-buttons";
+@import "foundation/components/flex-video";
+@import "foundation/components/forms";
+// @import "foundation/components/icon-bar";
+@import "foundation/components/inline-lists";
+// @import "foundation/components/joyride";
+// @import "foundation/components/keystrokes";
+@import "foundation/components/labels";
+// @import "foundation/components/magellan";
+// @import "foundation/components/orbit";
+// @import "foundation/components/pagination";
+@import "foundation/components/panels";
+// @import "foundation/components/pricing-tables";
+// @import "foundation/components/progress-bars";
+// @import "foundation/components/range-slider";
+// @import "foundation/components/reveal";
+// @import "foundation/components/side-nav";
+// @import "foundation/components/split-buttons";
+// @import "foundation/components/sub-nav";
+// @import "foundation/components/switches";
+// @import "foundation/components/tables";
+// @import "foundation/components/tabs";
+// @import "foundation/components/thumbs";
+// @import "foundation/components/tooltips";
+@import "foundation/components/top-bar";
+@import "foundation/components/type";
+// @import "foundation/components/offcanvas";
+// @import "foundation/components/visibility";
+
+/*! ----------------------------------------
+	 startup.singularityu.org SASS
+	 Copyright 2014, Pascal Finette
+	 http://finette.com
+	 Good artists copy, great artists steal
+	 Based on Foundation v5.4.6
+----------------------------------------- */
+
+// Define our colors
+$su-blue: #5eb5e3;   // rgb(94,181,227)
+$su-orange: #ee984c; // rgb(238,152,76)
+$su-yellow: #eee352; // rgb(238,227,82)
+$su-red: #b66f7d;    // rgb(182,111,125)
+
+// Reusable classes
+.round-image { border-radius: 50%; }
+
+.highlight { background-color: rgba(253, 223, 88, 0.3) }
+
+.button, form input[type=submit] {
+	background-color: $su-blue;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	padding: 0.25rem 1rem;
+	&:hover { background-color: #56A0C8; }
+}
+
+form input[type="checkbox"] {
+	margin-bottom: 0;
+}
+
+// Section-specific styling
+#header-home-bg { background: url(../img/bg-home.jpg) no-repeat center center fixed; }
+#header-accelerator-bg { background: url(../img/bg-accelerator.jpg) no-repeat center center fixed; }
+#header-residency-bg { background: url(../img/bg-residency.jpg) no-repeat center center fixed; }
+#header-su-companies-bg { background: url(../img/bg-su-companies.jpg) no-repeat center center fixed; }
+#header-portfolio-bg { background: url(../img/bg-portfolio.jpg) no-repeat center center fixed; }
+#header-team-bg { background: url(../img/bg-team.jpg) no-repeat center center fixed; }
+#header-blog-bg { background: url(../img/bg-blog.jpg) no-repeat center center fixed; }
+#header-investor-bg { background: url(../img/bg-investor.jpg) no-repeat center center fixed; }
+
+#header-home-bg,
+#header-accelerator-bg,
+#header-residency-bg,
+#header-su-companies-bg,
+#header-portfolio-bg,
+#header-team-bg,
+#header-blog-bg,
+#header-investor-bg {
+	background-size: cover;
+	height: auto;
+}
+
+#header {
+	background-color: rgba(94,181,227,0.85);
+	padding-top: 1.5rem;
+	h1, h3 { color: white; }
+	.header-promo {
+		margin-top: 5rem;
+		margin-bottom: 6rem;
+	}
+}
+
+.top-bar-section {
+	a {
+		text-decoration: none;
+		&:hover { text-decoration: underline; }
+	}
+	img { height: 1.4rem; }
+}
+
+.title-area {
+	img { height: 40px; }
+}
+
+#main-content {
+	margin: 2rem 0;
+	p a { color: $su-blue; }
+}
+
+#footer {
+	background-color: $su-blue;
+	padding: 1.5rem 0;
+	img { height: 40px; }
+	p, a {
+		color: white;
+		text-decoration: none;
+		font-size: 0.8rem;
+		margin-bottom: 0;
+	}
+	a:hover { text-decoration: underline; }
+}
+
+// Page specific styling: Portfolio
+.portfolio-grid {
+	padding-bottom: 2rem;
+	a { text-decoration: none; }
+	hr { margin-top: 3em; }
+}
+.portfolio-grid-image {
+	img {
+		opacity: 0.3;
+		cursor: pointer;
+		&:hover { opacity: 1; }
+	}
+}
+
+// Page specific styling: Team
+.team-social {
+	img {
+		width: 2rem;
+		margin-top: 1rem;
+		margin-left: 0.5rem;
+		opacity: 0.4;
+		cursor: pointer;
+		&:hover { opacity: 1; }
+	}
+}
+
+// Page specific styling: Mentor Network
+.mentor-overview {
+	font-size: 0.8rem;
+	a {
+		text-decoration: none;
+		&:hover { text-decoration: underline; }
+	}
+}
+
+#results-container {
+	margin-bottom: 0;
+}
+
+// Page specific styling: GGC
+.ggc {
+	img { width: 50%; }
+}
+
+// Page specific styling: Blog
+.blog-headline {
+	a { text-decoration: none; }
+}

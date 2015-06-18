@@ -1,0 +1,29 @@
+---
+layout: compress
+---
+{% include header.html %}
+
+<div id="header-blog-bg">
+	<div id="header">
+		{% include menu.html %}
+		<div class="row">
+			<div class="header-promo large-10 columns large-offset-1 end">
+				<h1>{{ page.title }}</h1>
+				<h3>{{ page.date | date: "%a, %b %d, %Y" }}</h3>
+			</div>
+		</div>
+	</div> <!-- header -->
+</div> <!-- header-home-bg -->
+
+<div id="main-content">
+	<div class="row">
+		<div class="large-8 columns large-offset-1">
+			{{ content }}
+		</div>
+		<div class="large-2 columns end">
+			<h5 class="right"><a href="/blog/">&larr; Back</a></h5>
+		</div>
+	</div>
+</div>
+
+{% include footer.html %}
