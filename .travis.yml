@@ -5,7 +5,6 @@ rvm:
 before_install: chmod +x build.sh
 install: gem install jekyll jekyll-sitemap html-proofer
 script:
-  # - bash ./build.sh
   - rm -rf _site || exit 0;
   - jekyll build && htmlproof --disable-external ./_site
   - cd _site
@@ -15,7 +14,14 @@ script:
   - git add .
   - git commit -m "Deploy to GitHub Pages"
 after_success:
-  - git push --force --quiet "https://${GH_TOKEN}@github.com/SingularityUniversity/startup.git" master:gh-pages > /dev/null 2>&1
+  if ([ "$TRAVIS_BRANCH" == "master" ] || [ ! -z "$TRAVIS_TAG" ]) &&
+      [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
+    echo "This will deploy!"
+  else
+    echo "This will not deploy!"
+  fi
+
+  # - git push --force --quiet "https://${GH_TOKEN}@github.com/SingularityUniversity/startup.git" master:gh-pages > /dev/null 2>&1
 
   # - "git push --force --quiet 'https://${GH_TOKEN}@$github.com/SingularityUniversity/startup-staging.git' master:gh-pages > /dev/null 2>&1"
   # - "git push --force --quiet 'https://${GH_TOKEN}@$github.com/SingularityUniversity/startup.git' master:gh-pages > /dev/null 2>&1"
