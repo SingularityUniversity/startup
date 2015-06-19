@@ -8,7 +8,7 @@ script: bash ./build.sh
 after_success:
   - chmod 600 .travis/deploy_key.pem # this key should have push access
   - ssh-add .travis/deploy_key.pem
-  - git remote add deploy github.com/SingularityUniversity/startup-staging.git
+  - git remote add deploy github.com/SingularityUniversity/startup.git
   - git push deploy
 
   # - "git push --force --quiet 'https://${GH_TOKEN}@$github.com/SingularityUniversity/startup-staging.git' master:gh-pages > /dev/null 2>&1"
