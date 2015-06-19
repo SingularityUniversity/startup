@@ -2,7 +2,7 @@ language: ruby
 rvm:
 - 2.1
 
-before_install: chmod +x scripts/deploy.sh
+before_install: chmod +x scripts/build.sh
 install: gem install jekyll jekyll-sitemap html-proofer
 script: bash ./scripts/build.sh
 
