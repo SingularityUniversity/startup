@@ -27,7 +27,7 @@ exclude: [
   .DS_Store,
   .env,
   .sass-cache,
-  scripts,
+  build.sh,
   Gemfile,
   Gemfile.lock,
   README.md,
