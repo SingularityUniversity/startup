@@ -6,7 +6,7 @@ before_install: chmod +x build.sh
 install: gem install jekyll jekyll-sitemap html-proofer
 script: bash ./build.sh
 after_success:
-  - "git push --force --quiet 'https://${GH_TOKEN}@github.com/SingularityUniversity/startup.git' master:gh-pages > /dev/null 2>&1"
+  - git push --force --quiet "https://${GH_TOKEN}@github.com/SingularityUniversity/startup.git" master:gh-pages > /dev/null 2>&1
 
   # - "git push --force --quiet 'https://${GH_TOKEN}@$github.com/SingularityUniversity/startup-staging.git' master:gh-pages > /dev/null 2>&1"
   # - "git push --force --quiet 'https://${GH_TOKEN}@$github.com/SingularityUniversity/startup.git' master:gh-pages > /dev/null 2>&1"
