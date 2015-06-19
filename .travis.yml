@@ -1,14 +1,17 @@
 language: ruby
 rvm:
 - 2.1
-before_install: chmod +x deploy.sh
+
+before_install: chmod +x scripts/deploy.sh
 install: gem install jekyll jekyll-sitemap html-proofer
-script: bash ./deploy.sh
+script: bash ./scripts/build.sh
+
 notifications:
   email:
   - p@singularityu.org
   on_success: always
   on_failure: always
+
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true

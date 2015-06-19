@@ -25,8 +25,9 @@ collections:
 
 exclude: [
   .DS_Store,
+  .env,
   .sass-cache,
-  deploy.sh,
+  scripts,
   Gemfile,
   Gemfile.lock,
   README.md,
