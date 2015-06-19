@@ -1,11 +1,11 @@
 ---
 layout: mentor
 first-name: "Dmitriy"
-last-name: "Tseliakhovic"
+last-name: "Tseliakhovich"
 picture: dmitriytseliakhovic.jpg
 job: "CEO, CTO, and Co-founder Escape Dynamics"
 linkedin: https://www.linkedin.com/in/dimlyus
-categories: []
+categories: [Aerospace, Physics, Structural Engineering, CAD, Propulsion Systems]
 accomplishments: ["Launching spacecraft using high-powered microwaves","Graduate Studies Program ‘10 alum","Expert in aerospace and physics "]
 ---
 Dr. Dmitriy Tseliakhovich is the CEO & CTO of Escape Dynamics – an aerospace research and development company focused on highly efficient space launch and aerospace propulsion systems.  Dmitriy is leading the research effort on advanced space launch engines, wireless energy transfer, high power microwaves, and novel high temperature materials.
