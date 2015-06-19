@@ -4,7 +4,16 @@ rvm:
 
 before_install: chmod +x build.sh
 install: gem install jekyll jekyll-sitemap html-proofer
-script: bash ./build.sh
+script:
+  # - bash ./build.sh
+  - rm -rf _site || exit 0;
+  - jekyll build && htmlproof --disable-external ./_site
+  - cd _site
+  - git init
+  - git config user.name "Travis CI"
+  - git config user.email "pascal@finette.com"
+  - git add .
+  - git commit -m "Deploy to GitHub Pages"
 after_success:
   - git push --force --quiet "https://${GH_TOKEN}@github.com/SingularityUniversity/startup.git" master:gh-pages > /dev/null 2>&1
 
