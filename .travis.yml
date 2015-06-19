@@ -14,11 +14,7 @@ script:
   - git add .
   - git commit -m "Deploy to GitHub Pages"
 after_success:
-  if ([ ! -z "$TRAVIS_TAG" ]); then
-    git push --force --quiet "https://${GH_TOKEN}@github.com/SingularityUniversity/startup.git" master:gh-pages > /dev/null 2>&1
-  else
-    git push --force --quiet "https://${GH_TOKEN}@github.com/SingularityUniversity/startup-staging.git" master:gh-pages > /dev/null 2>&1
-  fi
+  - if ([ ! -z "$TRAVIS_TAG" ]) ; then git push --force --quiet "https://${GH_TOKEN}@github.com/SingularityUniversity/startup.git" master:gh-pages > /dev/null 2>&1 ; else git push --force --quiet "https://${GH_TOKEN}@github.com/SingularityUniversity/startup-staging.git" master:gh-pages > /dev/null 2>&1 ; fi
 
   # - "git push --force --quiet 'https://${GH_TOKEN}@$github.com/SingularityUniversity/startup-staging.git' master:gh-pages > /dev/null 2>&1"
   # - "git push --force --quiet 'https://${GH_TOKEN}@$github.com/SingularityUniversity/startup.git' master:gh-pages > /dev/null 2>&1"
