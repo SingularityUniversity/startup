@@ -1,26 +1,30 @@
 language: ruby
 rvm:
 - 2.1
-
 install: gem install jekyll jekyll-sitemap html-proofer
 script:
-  - rm -rf _site || exit 0;
-  - jekyll build && htmlproof --disable-external ./_site
-  - cd _site
-  - git init
-  - git config user.name "Travis CI"
-  - git config user.email "pascal@finette.com"
-  - git add .
-  - git commit -m "Deploy to GitHub Pages"
+- rm -rf _site || exit 0;
+- jekyll build && htmlproof --disable-external ./_site
+- cd _site
+- git init
+- git config user.name "Travis CI"
+- git config user.email "pascal@finette.com"
+- git add .
+- git commit -m "Deploy to GitHub Pages"
 after_success:
-  - if ([ ! -z "$TRAVIS_TAG" ]) ; then echo "startup.singularityu.org" > CNAME && git add . && git commit -m "Adding CNAME" && git push --force --quiet "https://${GH_TOKEN}@github.com/SingularityUniversity/startup.git" master:gh-pages > /dev/null 2>&1 ; else echo "staging-startup.singularityu.org" > CNAME && git add . && git commit -m "Adding CNAME" && git push --force --quiet "https://${GH_TOKEN}@github.com/SingularityUniversity/startup-staging.git" master:gh-pages > /dev/null 2>&1 ; fi
-
+- if ([ ! -z "$TRAVIS_TAG" ]) ; then echo "startup.singularityu.org" > CNAME && git
+  add . && git commit -m "Adding CNAME" && git push --force --quiet "https://${GH_TOKEN}@github.com/SingularityUniversity/startup.git"
+  master:gh-pages > /dev/null 2>&1 ; else echo "staging-startup.singularityu.org"
+  > CNAME && git add . && git commit -m "Adding CNAME" && git push --force --quiet
+  "https://${GH_TOKEN}@github.com/SingularityUniversity/startup-staging.git" master:gh-pages
+  > /dev/null 2>&1 ; fi
 notifications:
   email:
   - p@singularityu.org
   on_success: always
   on_failure: always
-
+  slack:
+    secure: RcEEQgq+dvWpurZsGZ0gR06/frOtozUHu2PQvHffj0BuF80SE++60pnduKtF++L52njOt3IEgllG1P6NTL9yio0zVEhUD5giF6fHXW73SHXsEz6X1yMbQid3WHXOXP7U5ddOixeNNu50UkLBMerEOFVQt1qV+RddE9+Bbs+YglN23slZKzBgCXlGGRi+Jf3cVLhFrZsPAiU5wrokzwCxUKihWlxjyfIBzCYegXaVeTs5kTRvBbj6bPQWfXNUR9DjNdfNCDJWmwlqRbiPlK7uSLaa1b3kb5nQKMv9l8VApy7e2+Zm2DTC2ymQogJglXuh3RwWVnatL/e3XwO+BY7wrIG9XG0QqOeae3nZ47EO7sKxiOQWllfCo+KpmUOpYmY/nQ9ToDpjLsvhdKaUWTdi2Au87vUS77mkRBw18k1YlU/iNrgYNEpqJeowO/YmEhkAgOY9WWFqpjd+izT3C+/6JJoNxTGBa43pGIu2pmRm/sefD3XkhATGgFb+XlgIdPikWaywzqQZj9gLCTi3CWJEd0cUzxfQkgwDaOUo0z/dQ2/+OA1FEg8LxUrb5cjJoiarm4jmuRMSIVFLg+ns1+mseHeB41Lwjc0tjWCx0rpwm9X7kRvd8efow0/FwLt9wfmhXq9aV6SMEAb++WYlYcf8wE5bEqURWbfBM/NVtHIMP9c=
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
