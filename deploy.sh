@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e # exit with nonzero exit code if anything fails
 
-if [ ! -z "{$TRAVIS_TAG}" ]
+if [ ! -z "${TRAVIS_TAG}" ]
 then
   # Create and add CNAME file for GitHub Pages
   # See: https://help.github.com/articles/about-custom-domains-for-github-pages-sites/
