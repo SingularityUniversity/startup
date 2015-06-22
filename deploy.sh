@@ -5,7 +5,7 @@ if [ ! -z "{$TRAVIS_TAG}" ]
 then
   # Create and add CNAME file for GitHub Pages
   # See: https://help.github.com/articles/about-custom-domains-for-github-pages-sites/
-  cd /_site
+  cd _site
   echo "${CNAME_PRODUCTION}" > CNAME
   git config user.name "Travis CI"
   git config user.email "pascal@finette.com"
@@ -20,7 +20,7 @@ then
 else
   # Create and add CNAME file for GitHub Pages
   # See: https://help.github.com/articles/about-custom-domains-for-github-pages-sites/
-  cd /_site
+  cd _site
   echo "${CNAME_STAGING}" > CNAME
   git config user.name "Travis CI"
   git config user.email "pascal@finette.com"
