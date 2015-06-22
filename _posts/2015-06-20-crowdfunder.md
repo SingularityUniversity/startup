@@ -8,3 +8,5 @@ Singularity University is offering $400,000 in Class B shares through our [Crowd
 We have a proven track record in investing in entrepreneurs solving billion person challenges. Our SU Labs Accelerator Seed Fund will invest $100,000 in each of the companies selected for the SU Startup Lab Accelerator Program that starts on September 28. Your investment has the potential to transform billions of lives!
 
 *This opportunity is available ONLY to accredited investors who are U.S. taxpayers.*
+
+For non-accredited investors we offer a unique opportunity to provide funding for our non-profit startups, who will participate in the SU Labs Startup Accelerator. Non-profits will receive $50,000 in the form of a non-restrictive grant. To fund these startups we set up a tax-exempt funding opportunity for you. Contact us for more information: [impact@singularity.org](mailto:impact@singularity.org)
