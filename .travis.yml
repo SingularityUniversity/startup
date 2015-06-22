@@ -2,22 +2,9 @@ language: ruby
 rvm:
 - 2.1
 install: gem install jekyll jekyll-sitemap html-proofer
-script:
-- rm -rf _site || exit 0;
-- jekyll build && htmlproof --disable-external ./_site
-- cd _site
-- git init
-- git config user.name "Travis CI"
-- git config user.email "pascal@finette.com"
-- git add .
-- git commit -m "Deploy to GitHub Pages"
-after_success:
-- if ([ ! -z "$TRAVIS_TAG" ]) ; then echo "startup.singularityu.org" > CNAME && git
-  add . && git commit -m "Adding CNAME" && git push --force --quiet "https://${GH_TOKEN}@github.com/SingularityUniversity/startup.git"
-  master:gh-pages > /dev/null 2>&1 ; else echo "staging-startup.singularityu.org"
-  > CNAME && git add . && git commit -m "Adding CNAME" && git push --force --quiet
-  "https://${GH_TOKEN}@github.com/SingularityUniversity/startup-staging.git" master:gh-pages
-  > /dev/null 2>&1 ; fi
+before_script: chmod +x build.sh deploy.sh
+script: bash ./build.sh
+after_success: bash ./deploy.sh
 notifications:
   email:
   - p@singularityu.org
@@ -28,4 +15,8 @@ notifications:
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  - GH_STAGING: github.com/SingularityUniversity/startup-staging.git
+  - GH_PRODUCTION: github.com/SingularityUniversity/startup.git
+  - CNAME_STAGING: staging-startup.singularityu.org
+  - CNAME_PRODUCTION: startup.singularityu.org
   - secure: K7lRLF6h2p/VDSAZHMTMJ5REa7+weVVq4+Ki9XBpoMfqOk0ZydG+umupjKVeKqwfU500nRb1htX43WeckqqSHwQxVTnQhcO0qnvuYj0IwgUYRRQT8p0DDcUA3z3n9QgnhcqHgdPIoVdgYVo9xSKwQCqpw4KD4BHXNNuC2Hbg8Foo/GpPcrgjCURMDXlqWaHklAvSUWSrLjSKFVxqo3efN+SVo3wNDAJQY0qcSRGC2CwTM+QiGXb9Wa+DyOrHT7OWWpWPGvlHcmfe2KH8jq6+68TXcQ7TVhpRpOUPrlIhcAuLz9WVQgNAEf4MvQOvTPAY5R0cWeFC41UYrz/x50xRe65nuARTxaM3MALGdjjDodNuAVMlLPNPLEQQgDXWEHrbTtKWi19VIvK0GxqHLAVklEV0h6tTI4QxJFvAQ9u6i1/ykVkU/CgtF7VfEgaZZjXEZEn29ophOF1gjnV6f6GR4RYscDWvZ2tJPPLjIz9jVJ9L0xcFm2sJALy8CvFBCY34HfyCbNFgZjXX2A5WLPTbLLOV2OOGHjuR6TACIzamjZDxBGah3R1bB+7vEFs+Y0CA+HIkHbi0W6V8cxjP+Gonj4Su9ChcG8ItrkBsbkpsqJu8JJKiMCvDzlaF+Rd1I8CKdnvlfSPfcAZO6kOqnLSCLjVmN64oaBgi8jv7xNFu5+c=

@@ -31,5 +31,7 @@ exclude: [
   Gemfile.lock,
   README.md,
   s3_website.yml,
-  vendor
+  vendor,
+  build.sh,
+  deploy.sh
 ]
