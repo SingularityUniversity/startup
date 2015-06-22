@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2015-06-19 16:08:01
+date: 2015-06-22
 title: Kicking Off The Graduate Studies Program
 ---
 We are **extremely** excited to kick off our 2015 Graduate Studies Program (GSP). Out of hundreds of applicants, Singularity University chose 80 finalists to attend the 10 week long experience. The GSP participants will spend the first five weeks in intensive learning modules, where our faculty will teach them about exponential tech. The curriculum will feature prominent speakers such as Guy Kawasaki (Apple’s first chief evangelist) and Tom Chi (creator of Google Glass). 
