@@ -12,6 +12,13 @@ paginate_path: "blog/page:num"
 sass:
   style: :compressed
 
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  ignore:
+    envs: [local]
+
 gems:
   - jekyll-sitemap
 
