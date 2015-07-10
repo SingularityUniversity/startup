@@ -7,7 +7,7 @@ In partnership with Matternet, Switzerland’s postal service announced this wee
 
 <!--break-->
 
-[Matternet Drone](/img/blog/2015-07-10.jpg)
+![Matternet Drone](/img/blog/2015-07-10.jpg)
 
 For now, Swiss Post said it expected to mainly use the drones in emergency situations, which could “involve bringing supplies to an area that has been cut off from the outside world following a storm.”
 
