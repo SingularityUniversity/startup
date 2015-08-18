@@ -18,7 +18,3 @@ The complexity of designing biological applications is staggering. With the expo
 ## Breakthrough
 
 CAD – computer assisted design – enables dramatic improvement in huge industries ranging from chip design to mechanical design. Biology is the most advanced and the most complicated technology on Earth. Managing the complexity of biology in software to enable the forward engineering of biology is the true “moonshot” mission of Genome Compiler.
-
-## Why Does It Matter?
-
-CAD – computer assisted design – enables dramatic improvement in huge industries ranging from chip design to mechanical design. Biology is the most advanced and the most complicated technology on Earth. Managing the complexity of biology in software to enable the forward engineering of biology is the true “moonshot” mission of Genome Compiler.
