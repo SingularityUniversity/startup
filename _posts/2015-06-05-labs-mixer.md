@@ -1,9 +1,9 @@
 ---
 layout: post
 date: 2015-06-05
-title: "SU Labs Mixer"
+title: "SU LABS Mixer"
 ---
-With Spring in the air, SU Labs hosted our Companies mixer to engage with our community and debut [Semtive](http://semtive.com/en/home), our newest SU Company. Event attendees included: SU mentors, local entrepreneurs, and staff from Bayer, a recent Corporate Program Partner.
+With Spring in the air, SU LABS hosted our Companies mixer to engage with our community and debut [Semtive](http://semtive.com/en/home), our newest SU Company. Event attendees included: SU mentors, local entrepreneurs, and staff from Bayer, a recent Corporate Program Partner.
 
 The night started off with a panel discussion from Jonathan Nelson, the founder of Hackers and Founders. Jonathan covered various topics from: cultural challenges faced by international entrepreneurs, proper structuring of funding, and the tech proliferation in the developing world. Our international audience (including Argentine, Canadian, German, Italian, and Russian attendees) listened with rapt attention. 
 

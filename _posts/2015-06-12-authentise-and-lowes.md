@@ -7,7 +7,7 @@ Forbes recently [featured the partnership between Authentise and Lowe's](http://
 
 <!--break-->
 
-The article also touched on the strong relationship between SU Labs and the Lowe's Innovation Lab. Through the SU Corporate Partnership Program, Lowe's has rolled out several exciting initiatives, including the retail-service Oshbot robot from [Fellow Robots](http://fellowrobots.com/) (another SU Company).
+The article also touched on the strong relationship between SU LABS and the Lowe's Innovation Lab. Through the SU Corporate Partnership Program, Lowe's has rolled out several exciting initiatives, including the retail-service Oshbot robot from [Fellow Robots](http://fellowrobots.com/) (another SU Company).
 
 We congratulate the Authentise team and look forward to bring more exponential tech to Lowe’s! 
 
