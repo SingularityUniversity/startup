@@ -4,7 +4,7 @@ first-name: "Philipp"
 last-name: "Pieper"
 picture: philipppiper.jpg
 job: "CEO, Lighthouse Interactive"
-linkedin: www.linkedin.com/in/philipppieper/
+linkedin: http://www.linkedin.com/in/philipppieper/
 categories: [Product Market Fit, E-commerce, Digital Media, Venture Capital, Business Development, Customer Acquisition, Strategic Partnerships]
 accomplishments: ["Angel investor and builder of start-ups at the intersection of mobile, video and data ","Founder and CEO of Proximic (acquired by comScore)","Expert in product-market fit and business building"]
 ---
