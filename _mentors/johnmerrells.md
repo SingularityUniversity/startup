@@ -1,7 +1,7 @@
 ---
 layout: mentor
 first-name: "John"
-last-name: "Merrels"
+last-name: "Merrells"
 picture: johnmerrels.jpg
 job: "Independent Badass/Consultant"
 linkedin: http://www.linkedin.com/in/merrells/en
