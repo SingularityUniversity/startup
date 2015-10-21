@@ -5,9 +5,9 @@ title: Singularity University Accelerator - Week 1 & 2 Recap
 ---
 With our inaugural startup accelerator in full swing, it is time to look back at the first two weeks:
 
-<!--break-->
+After an action-packed first week (our “bootcamp” week) where our startups went through a series of workshops and lectures – all with the aim to prepare them for the weeks ahead, the teams moved into the rhythm of weeks 2-9. For the next couple of weeks our entrepreneurs will spend time on building their product, forming partnerships and pitch to investors; and lectures, workshops and lots of social interactions with our amazing speakers & mentors.
 
-After an action-packed first week (our “bootcamp” week) where our startups went through a series of workshops and lectures – all with the aim to prepare them for the weeks ahead, the teams moved into the rhythm of weeks 2-9. For the next couple of weeks our entrepreneurs will spend time on building their product, forming partnerships and pitch to investors and lectures, workshops and lots of social interactions with our amazing speakers & mentors.
+<!--break-->
 
 To give you a taste of what life at the Singularity University Accelerator looks like (and to learn from some of our mentors), watch this video summarizing the first two weeks of the program:
 
