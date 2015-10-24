@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-name:  	FREDsense Technologies 
+name:  	FREDsense
 link: http://www.fredsense.com/
 image: fredsense.png
 tagline: Engineered biosensors for remote water monitoring.
