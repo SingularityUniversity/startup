@@ -45,7 +45,7 @@
 // @import "foundation/components/split-buttons";
 // @import "foundation/components/sub-nav";
 // @import "foundation/components/switches";
-// @import "foundation/components/tables";
+@import "foundation/components/tables";
 // @import "foundation/components/tabs";
 // @import "foundation/components/thumbs";
 // @import "foundation/components/tooltips";
@@ -195,4 +195,9 @@ form input[type="checkbox"] {
 // Page specific styling: Blog
 .blog-headline {
 	a { text-decoration: none; }
+}
+
+// Table specific styling
+td {
+	vertical-align: top;
 }
