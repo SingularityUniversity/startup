@@ -11,4 +11,4 @@ Our companies are lucky to be coached by Bill Joos of Go To Market Consulting. B
 
 ![Teams in Deep Discussion](/img/blog/2015-11-03.jpg)
 
-The presentations have come a tremendously long way thanks to Bill’s guidance. He has taken them through the entire pitch journey from the handshake pitch (what you say after saying hello) to the napkin pitch (conceptualizing your mission) to the proper on stage presentation. Our entrepreneurs have refined their message all while working on product and funding developments. They are excited to spread their message with the world on 12/5!
+The presentations have come a tremendously long way thanks to Bill’s guidance. He has taken them through the entire pitch journey from the handshake pitch (what you say after saying hello) to the napkin pitch (conceptualizing your mission) to the proper on stage presentation. Our entrepreneurs have refined their message all while working on product and funding developments. They are excited to spread their message with the world on 12/1!
