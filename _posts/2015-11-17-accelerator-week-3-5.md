@@ -5,7 +5,7 @@ title: "Singularity University Accelerator: Weeks 3-5 Recap"
 ---
 With the SU Labs Accelerator rounding week 8, we wanted to fill you in on the mid-program learnings during weeks 3-5. 
 
-<!-- break -->
+<!--break-->
 
 Following our Bootcamp and Prototyping focused weeks, our startups dug into baseline necessities for scaling up their companies. Week 3 focused on developing financial and team building acumen. Our startups heard from Jim Cook, CFO of Mozilla and co-founder of Netflix about Financial Structuring. The participants later heard from a panel of VCs about vetting and evaluation.  
 
@@ -17,4 +17,4 @@ To bookend the weeks, we hosted Salim Ismael, author of Exponential Organization
 
 Check out the weeks recap below!
 
-<div class="flex-video><iframe width="640" height="360" src="https://www.youtube.com/embed/-4iK4X0cQOY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+<div class="flex-video"><iframe width="640" height="360" src="https://www.youtube.com/embed/-4iK4X0cQOY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
