@@ -1,6 +1,6 @@
 ---
 layout: mentor
-first-name: "Mattias"
+first-name: "Matthias"
 last-name: "Wagner"
 picture: mattiaswagner.jpg
 job: "Product Advisor at We Create Stuff"
