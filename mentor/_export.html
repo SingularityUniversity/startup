@@ -1,0 +1,19 @@
+---
+---
+{"mentors":[
+{% for mentor in site.mentors %}  {
+    "FirstName":"{{ mentor.first-name }}",
+    "LastName":"{{ mentor.last-name }}",
+    "Title":"{{ mentor.job }}",
+    "Photo":"http://startup.singularityu.org/img/mentor/{{ mentor.picture }}",
+    "LinkedIn":"{{ mentor.linkedin }}",
+    "Accomplishments":[{% for accomplishment in mentor.accomplishments %}
+      "{{ accomplishment }}"{% if forloop.rindex != 1 %},{% endif %}{% endfor %}
+    ],
+    "Expertise":[{% for category in mentor.categories %}
+      "{{ category }}"{% if forloop.rindex != 1 %},{% endif %}{% endfor %}
+    ],
+    "Vita":"{{ mentor.content | strip_html | strip_newlines }}"
+  }{% if forloop.rindex != 1 %},{% endif %}
+{% endfor %}
+]}
