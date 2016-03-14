@@ -5,7 +5,7 @@ set -e # exit with nonzero exit code if anything fails
 rm -rf _site || exit 0;
 
 # build site using jekyll
-jekyll build && htmlproof --disable-external ./_site
+jekyll build && htmlproofer --disable-external ./_site
 
 # go to the out directory and create a *new* Git repo
 cd _site
