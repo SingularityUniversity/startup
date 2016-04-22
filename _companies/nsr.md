@@ -4,7 +4,6 @@ name: Network Society Research
 link: http://netsoc.org/
 image: nsr.jpg
 tagline: "Preparing for the coming social infrastructure phase change"
-technology: 
 grandchallenge: Governance
 ---
 ## About
