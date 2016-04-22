@@ -3,7 +3,7 @@ layout: portfolio
 name: Authentise
 link: http://www.authentise.com/
 image: authentise.jpg
-tagline: "Helping companies get their designs 3D printed."
+tagline: Helping companies get their designs 3D printed.
 technology: Nanotechnology & Digital Fabrication
 grandchallenge: Security
 ---
