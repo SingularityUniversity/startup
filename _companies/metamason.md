@@ -9,17 +9,16 @@ grandchallenge: Health
 ---
 ## About
 
-Metamason is building a healthcare-focused software platform that takes scanned images of the body and creates custom-fit, 3D-printed products that are truly personalized. Our flagship product is Respere, a custom 3D printed CPAP mask, designed to revolutionize treatment for Obstructive Sleep Apnea. 
+Metamason, is a LA based medtech startup building the Scan-Fit-Print software platform for truly unique soft-elastic products, custom fit to the body via 3D printing & scanning. Our first product line, Respere is the world's first truly personalized CPAP mask for the treatment of sleep apnea. 
 
 ## Problem
 
-Conventional, mass-produced CPAP masks often fit poorly; they are unattractive, uncomfortable, noisy and prone to leakage mitigated with painfully tightened straps. For the millions of Americans currently suffering from OSA, an ineffective mask makes a good night's sleep all but impossible. 
+Sleep apnea affects nearly 1 in 5 adult Americans. Continuous Positive Airway Pressure (CPAP) therapy is the industry standard treatment. However, over 50% of CPAP users quit treatment in the first year, with poor mask ergonomics sighted as the leading issue. 
 
 ## Breakthrough
 
-Metamason’s key innovation is our software platform: a scalable process for automating the production of on-demand products unique to each person's individual physiology. 
+Metamason has invented a number of methods to 3D print platinum-cure medical grade silicone; combining this with a scan-to-fit platform to apply parametric designs to human topology is the perfect tool for proliferating useful and functional 3D printed medical devices. 
 
 ## Why Does It Matter?
 
-Recent advances in 3D Scanning, Algorithmic Design, and Additive Manufacturing have made a world of new products possible.
-We started metamason to harness these new powers in the service of a wider mission: to improve the lives of people who suffer needlessly at the hands of outmoded design. 
+Those who suffer from OSA but are non-compliant with treatment, have higher mortality rates than 2-pack-a-day smokers. Respere will increase compliance by fixing the ergonomic issue; improving quality of life of millions, while reducing the net burden on the health care system. 
