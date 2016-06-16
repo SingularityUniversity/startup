@@ -1,8 +1,8 @@
 ---
 layout: portfolio
 name: Impact Vision
-link: www.impactvi.com
-image: http://impactvision.png
+link: http://www.impactvi.com
+image: impactvision.png
 tagline: "Using hyperpsectral technology to build a more resilient and effective global food system"
 technology: Networks & Computing Systems
 grandchallenge: Food, Environment
