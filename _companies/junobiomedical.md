@@ -1,7 +1,7 @@
 ---
 layout: portfolio
 name: Juno Biomedical
-link: www.junobiomedical.com
+link: http://www.junobiomedical.com
 image: junobiomedical.png
 tagline: "Our mission is to bring hope to, and push innovation for, those suffering currently untreatable neurological conditions."
 technology: Medicine & Neuroscience
