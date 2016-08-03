@@ -82,6 +82,15 @@ $su-red: #b66f7d;    // rgb(182,111,125)
 	&:hover { background-color: #56A0C8; }
 }
 
+.button-big, form input[type=submit] {
+	background-color: $su-orange;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	padding: 0.25rem 1rem;
+	&:hover { background-color: #56A0C8; }
+}
+
 form input[type="checkbox"] {
 	margin-bottom: 0;
 }
@@ -116,6 +125,23 @@ form input[type="checkbox"] {
 		margin-top: 8rem;
 		margin-bottom: 9rem;
 	}
+}
+
+#header-acc {
+	background-color: rgba(94,181,227,0.85);
+	padding-top: 1.5rem;
+	h1, h2, h3 { color: white; }
+	.header-promo {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+}
+
+#content-orange {
+	background-color: $su-orange;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	h1, h2, h3, p { color: white; }
 }
 
 .top-bar-section {
