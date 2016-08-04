@@ -186,8 +186,8 @@ title: Startup Accelerator
 			<ul>
 				<li>Opened 270 doors to relevant funders, partners, corporates, business development and scale advisors, board members, new hires, and more</li>
 				<li>Facilitated 12 Board of Advisor meetings that resulted in business growth insights and upticks in user engagement and revenue </li>
-				<li>Convened 4 Masterminds that are like board meetings on steroids</li>
-				<li>Held 18 workshops where our founders walked away with applicable skills they could use on the same day</li>
+				<li>Convened 4 Masterminds that are like supercharged board meetings</li>
+				<li>Held 18 workshops where founders walked away with applicable skills they could use on the same day</li>
 				<li>Hosted 11 thoughtfully-curated networking events with key industry experts, with advance briefings for our founders</li>
 				<li>Organized countless strategic preparation sessions <i>(we never let you go into a big meeting cold)</i></li>
 			</ul>
@@ -195,7 +195,7 @@ title: Startup Accelerator
 			<p>We’re extremely proud of the work SU portfolio companies are doing to tackle some of the world’s most persistent challenges. The SU Labs Startup Accelerator, Global Solutions Program (GSP) and Startup Network have produced numerous success stories, and they’ll be available to support you.</p>
 
 			<ul>
-				<li>Field Ready (Accelerator ‘16) received The White House Champions of Change Award and was named a finalist for the Global Humanitarian Innovation Award/li>
+				<li>Field Ready (Accelerator ‘16) received The White House Champions of Change Award and was named a finalist for the Global Humanitarian Innovation Award</li>
 				<li>Be My Eyes (Accelerator ‘15) won two Danish Design Awards </li>
 				<li>Made in Space (GSP ‘10) received a $20M contract from NASA to develop in-space manufacturing </li>
 				<li>Getaround (GSP ‘09) is transforming peer-to-peer carsharing</li>
@@ -292,7 +292,7 @@ title: Startup Accelerator
 			<h3><strong>III. Hardware and Software (Enterprise / Consumer)</strong></h3>
 			
 			<p><a href="http://impact.singularityu.org/FY16-Labs-Accelerator-FY17-Promotion_Accelerator-LP.html">Applications are accepted November 1st to December 9th. Click to sign up.</a></p>
-			<p>Our network has supported innovators like BeMyEyes (Accelerator ‘15), X2AI (Accelerator ‘15), Getaround (GSP ‘10) and many more that are building cool tech for consumers and enterprise customers alike. If these buzzwords describe your work, this is your category: AI-integrated hardware, sustainability, biosensors, edTech, low-cost mobile/web solutions, solutions for the unbanked, FinTech, AgTech, iOT or solutions leveraging blockchain technologies.</p>
+			<p>Our network has supported innovators like BeMyEyes (Accelerator ‘15), X2AI (Accelerator ‘15), Getaround (GSP ‘10) and many more that are building cool tech for consumers and enterprise customers alike. If these buzzwords describe your work, this is your category: AI-integrated hardware, sustainability, biosensors, edTech, low-cost mobile/web solutions, solutions for the unbanked, FinTech, AgTech, IoT or solutions leveraging blockchain technologies.</p>
 
 			
 			<p>*501(c)3s: Find the group that best matches what you’re working on, and we’ll take care of the rest!</p>
@@ -308,15 +308,13 @@ title: Startup Accelerator
 	</div>
 </div>
 
-
 <script type="text/javascript">
-	function addListener(element, type, callback) {
-		if (element.addEventListener) element.addEventListener(type, callback);
-		else if (element.attachEvent) element.attachEvent('on' + type, callback);
-	}
-
-	var downloadLink = document.getElementById('applyLink');
-	addListener(downloadLink, 'click', function() {
-  	ga('send', 'event', 'button', 'click', 'Accelerator Application');
-	});
+$.ajax({
+url: '//munchkin.marketo.net/munchkin.js',
+dataType: 'script',
+cache: true,
+success: function() {
+Munchkin.init('099-JCC-978');
+}
+});
 </script>
