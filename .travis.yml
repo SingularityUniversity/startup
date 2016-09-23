@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-- 2.2
+- 2.3.1
 install: gem install jekyll jekyll-sitemap jekyll-paginate redcarpet blankslate html-proofer
 before_script: chmod +x build.sh deploy.sh
 script: bash ./build.sh
